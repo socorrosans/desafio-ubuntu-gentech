@@ -104,7 +104,8 @@ body {
 }
 
 .slide-buttons {
-  max-width: 150px;
+  max-width: 190px;
+  min-width: 150px;
   display: flex;
   justify-content: center;
   background: #FFFFFF;
@@ -112,6 +113,7 @@ body {
   margin: 62px auto 0px;
   border-radius: 25px;
   box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.25);
+  gap: 8px;
 }
 
 .button {
@@ -122,13 +124,11 @@ body {
   cursor: pointer;
 }
 
-.button + .button {
-  margin-left: 8px;
-}
-
-.button.actived, .button.active {
+.button.active {
+  width: 30px;
+  border-radius: 25px;
   background-color: var(--button-color);
-  transition: .4s;
+  transition: .2s;
 }
 
 @media(max-width: 700px){
