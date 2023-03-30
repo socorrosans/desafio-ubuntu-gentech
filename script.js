@@ -75,6 +75,11 @@ class Slide {
   activeButtons(){
     this.buttonsArray.forEach(item => item.classList.remove('active'));
     this.buttonsArray[this.index.active].classList.add('active');
+    this.buttonsArray.forEach(btn => btn.classList.remove('actived'));
+
+    if(this.index.active !== 0){
+      this.buttonsArray.slice(0, this.index.active + 1).forEach(btn => btn.classList.add('actived'))
+    }
   }
 
   anime(){
