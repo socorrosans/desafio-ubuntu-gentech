@@ -43,7 +43,7 @@ body {
   max-width: 1360px;
   margin-inline: auto;
   padding-bottom: 30px;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .slide {
